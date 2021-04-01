@@ -1,0 +1,22 @@
+header{
+    margin: 30px 30px;
+}
+p{
+    padding-bottom: 20px;
+}
+.logo{
+    margin-top: 50px;
+}
+.text{
+    width: 800px;
+    margin: 40px 40px;
+}
+.gallery{
+    margin: 20px;
+}
+img{
+    padding: 20px;
+}
+.contacts{
+    margin: 30px 30px;
+}

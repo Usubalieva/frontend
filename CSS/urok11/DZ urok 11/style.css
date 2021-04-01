@@ -1,0 +1,20 @@
+.menu {
+	background: rosybrown;
+}
+#menu_3 {
+	background: salmon;
+}
+
+.main {
+	background: pink;
+}
+.text {
+	margin-top: 20px;
+	background: plum;
+	font-size: 20px;
+	color: purple;
+}
+
+footer {
+	background: papayawhip;
+}

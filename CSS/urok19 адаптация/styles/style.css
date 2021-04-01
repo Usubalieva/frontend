@@ -1,0 +1,474 @@
+/*  Базовые настройки страницы */
+    /*  * - означает обращение ко всем элементам сайта */
+    * {
+        box-sizing: border-box;
+    }
+
+    body, p {
+        margin: 0;
+    }
+
+
+
+
+/* Универсальные стили */
+
+.left, .ul_li > li {
+    float: left;  
+     /* > - означает, что обращение будет происходить только для родительских элементов  */
+    /* float - выравнивание */
+}
+
+.right {
+    float: right;
+}
+
+.ul_li, ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.ul_li li {
+    padding: 10px 15px;
+}
+
+.b-r li {
+    border-right: 1px solid #dadada;
+}
+
+.b-r li:last-child {
+    border-right: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.m-l-5 {
+    margin-left: 10px;
+}
+
+.red {color: #e53556;}
+.yellow { color: #fc3;}
+.blue {color:  #7cd0f5;}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid gainsboro;
+    width: 100%;
+    top: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 250px; 
+    z-index: 2;
+}
+.dropdown_menu li {
+    list-style: none;
+}
+
+.hover_menu li:hover .dropdown_menu {
+    display: block;
+}
+
+.dnone {
+    display: none;
+}
+
+.bg_orange {
+    background: #ffcc33;
+}
+
+
+
+/*  Стили для страницы 
+            Урок 14   */
+.verhnee_menu {
+    padding: 5px;
+    background: #f7f7f7;
+    display: inline-block;
+    width: 100%;
+    color: #4c4b6c;
+}
+
+.verhnee_menu .ul_li i {
+    margin-right: 10px;
+}
+.verhnee_menu .ul_li li{
+    padding: 5px 15px;
+}
+
+/* Position */
+.msg {
+    position: absolute;
+    top: -7px;
+    right: 8px;
+    background: #e53556;
+    width: 13px;
+    height: 15px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    line-height: 1.5;
+    border-radius: 13px;
+}
+
+.icon_msg {
+    position: relative;
+}
+
+.center_menu {
+    padding: 10px;
+}
+.center_menu img {
+    padding-bottom: 10px;
+}
+.center_menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seryi_krug {
+    background: #ececec;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 20px;
+    color: #4c4b6c;
+}
+
+.center_menu .right > p:first-child {
+    font-weight: bold;
+    color: #4c4b6c;
+}
+
+.center_menu .right > p {
+    color: #ababab;
+}
+
+/* Nijnee menu */
+.nijnee_menu {
+    display: inline-block;
+    width: 100%;
+    background: #f7f7f7;
+    position: relative;
+    height: 50px;
+}
+
+.hover_menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #4c4b6c;
+    font-size: 20px;
+}
+.hover_menu a:hover {
+    color: white;
+    background: #7cd0f5;
+    border-radius: 20px;
+}
+.dropdown_menu a{
+    font-size: 14px;
+    color: #2b2b2b;  
+}
+.dropdown_menu li {
+    padding: 6px;
+}
+.dropdown_menu li:first-child a{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+/*  -------------DZ 16 */
+
+
+
+/* Urok 17 */
+.block_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+}
+.block_title h1 {
+    color: #4c4b6c;
+    font-size: 30px;
+}
+#product {
+    padding: 15px;
+}
+.body_block {
+    margin-top: 20px;
+}
+.list_product > .product {
+    float: left;
+}
+.block_stars {
+    display: inline-block;
+}
+.block_stars > div {
+    float: left;
+}
+
+/* Product style */
+    .product {
+        display: inline-block;
+        min-height: 310px;
+    }
+    .product img {
+        width: 203px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: contain;
+    }
+    .body_product {
+        margin-top: 10px;
+        color: #4c4b6c;
+    }
+    .stars {
+        margin-right: 5px;
+    }
+    .stars > i {
+        color: #ffcc33;
+        font-size: 10px;
+        margin-left: -4px;
+    }
+    .stars > i:first-child {
+        margin-left: 0;
+    }
+    .reviews {
+        font-size: 13px;
+        font-style: italic;
+        line-height: 1.7;
+        color: #4c4b6c;
+        text-transform: capitalize;
+    }
+    .price {
+        display: inline-block;
+        width: 100%;
+        margin-top: -5px;
+    }
+    .price span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #4c4b6c;
+    }
+    .price del {
+        font-size: 16px;
+        margin-left: 12px;
+        color: #9e9e9e;
+        line-height: 2;
+    }
+    .btns li {
+        padding: 0;
+    }
+    .btns .ul_li {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .btns .seryi_krug {
+        transition: .5s;
+    }
+    .btns li:hover .seryi_krug {
+        background: #7cd0f5;
+        color: white;
+        cursor: pointer;
+    }
+    .img {
+        position: relative;
+    }
+    .desc_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ffffffb5;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #dcdcdcb5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s;
+    }
+    .desc {
+        width: 80%;
+        text-align: center;
+    }
+    .ttl {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .product:hover .dnone {
+        display: block;
+    }
+    .product:hover .block_stars {
+        display: none;
+    }
+    .product:hover .desc_img {
+        opacity: 1;
+    }
+    .list_product {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tooltip {
+        position: absolute;
+        right: -7px;
+        top: 7px;
+        color: white;
+        padding: 3px 6px;
+        font-size: 13px;
+        border-radius: 4px;
+        z-index: 2;
+    }    
+    #banner img{
+        width: 100%;
+    }
+
+    
+    footer {
+        color: #999;
+        font-size: 15px;
+    }
+    footer h3 {
+        color: #336;
+    }
+    footer a {
+        text-decoration: none;
+        color: #999;
+    }
+    footer i {
+        margin-right: 10px;
+    }
+    .btn_call {
+        margin-top: 25px;
+    }
+    .btn_call a {
+        text-decoration: none;
+        background: #7cd0f5;
+        color: white;
+        padding: 13px 50px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .btn_call a:hover {
+        background: #2f96c2;
+    }
+    .f_li_hover li {
+        padding: 5px 0;
+        transition: .5s;
+    }
+    .f_li_hover li:hover {
+        margin-left: 15px;
+        font-weight: bold;
+    }
+    
+    .f_ttl:before {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background: #f3f3f3;
+        position: absolute;
+        bottom: -20px;
+    }
+    .f_ttl {
+        position: relative;
+        margin: 30px 0 43px;
+    }
+    footer .ul_li li {
+        padding: 2px;
+    }
+    footer .social a{
+        margin-left: 10px;
+        color: #2b2b2b;
+    }
+    .f_text {
+        text-decoration: none;
+        color: #2b2b2b;
+        font-style: italic;
+    }
+    .f_text:hover {
+        color: red;
+    }
+    .f_menu {
+        margin-top: 80px;
+        font-size: 14px;
+        margin-left: 43%;
+    }
+    .f_menu li {
+        margin-left: 7px;
+    }
+    .border {
+        border: 2px solid #dcdcdcb5;
+        margin: 10px 0 40px;
+    }
+
+    .by {
+        font-weight: bold;
+        color: #336;
+    }
+    .money {
+        text-align: end;
+    }
+
+
+
+
+
+
+
+
+/* Урок 19 */
+/*   МОБИЛЬНАЯ АДАПТАЦИЯ */
+
+    /* Заметка: 
+     Есть 2 вида адаптации:
+        1) Резиновый шаблон - это когда сайт задан в % соотношении.
+        2) Фиксированный - это когда адаптируем наш сайт на стандарты того или иного устройства.
+            */
+
+@media (max-width: 1024px) {
+    .container{
+        width: auto;
+    }
+
+    .list_product {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .product {
+        margin-right: 17px;
+    }
+    .list_product > .product:nth-child(4n) {
+        margin-right: 0;
+    }
+    .verhnee_menu, .center_menu p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product {
+        margin-right: 8px;
+    }
+    .list_product > .product:nth-child(3n) {
+        margin-right: 30px;
+    }
+    .list_product > .product:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+    

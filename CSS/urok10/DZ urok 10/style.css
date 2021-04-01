@@ -1,0 +1,40 @@
+header{
+	background: #AFEEEE;
+    padding: 30px 30px;
+}
+p{
+    padding-bottom: 20px;
+}
+a{
+	color: white;
+}
+.menu{
+	background: #20B2AA;
+	color: white;
+}
+.logo{
+    margin-top: 50px;
+}
+
+.news{
+	background: #20B2AA;
+	color: white;
+}
+.text{
+	background: #AFEEEE;
+    padding: 40px 40px;
+}
+.gallery{
+    margin: 20px;
+}
+img{
+    padding: 20px;
+}
+.contacts{
+    margin: 30px 30px;
+}
+
+footer{
+	background: #000000;
+	color: white;
+}
