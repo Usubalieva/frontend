@@ -22,4 +22,3 @@ alert( c * d );
 //  DZ следующий
 let g = 56;
 console.log(g);
-alert(g);
