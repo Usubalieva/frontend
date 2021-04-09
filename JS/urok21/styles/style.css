@@ -30,10 +30,6 @@
     margin: 0;
 }
 
-.ul_li li {
-    padding: 10px 15px;
-}
-
 .b-r li {
     border-right: 1px solid #dadada;
 }
@@ -55,15 +51,18 @@
 .yellow { color: #fc3;}
 .blue {color:  #7cd0f5;}
 
+
+
 .dropdown_menu {
     display: none;
     position: absolute;
     background: white;
-    border: 1px solid gainsboro;
+    border: 0.5px solid gainsboro;
     width: 100%;
-    top: 50px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    top: 60px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 55px;
     width: 250px; 
     z-index: 2;
 }
@@ -88,7 +87,7 @@
 /*  Стили для страницы 
             Урок 14   */
 .verhnee_menu {
-    padding: 5px;
+    padding: 10px;
     background: #f7f7f7;
     display: inline-block;
     width: 100%;
@@ -99,8 +98,12 @@
     margin-right: 10px;
 }
 .verhnee_menu .ul_li li{
-    padding: 5px 15px;
+    padding: 0px 15px;
 }
+.verhnee_menu .ul_li li:first-child {
+    padding-left: 0px;
+}
+
 
 /* Position */
 .msg {
@@ -122,7 +125,7 @@
 }
 
 .center_menu {
-    padding: 10px;
+    padding: 23px;
 }
 .center_menu img {
     padding-bottom: 10px;
@@ -134,6 +137,7 @@
 }
 
 .seryi_krug {
+    margin-right: 5px;
     background: #ececec;
     width: 40px;
     height: 40px;
@@ -145,7 +149,7 @@
 }
 
 .center_menu .right > p:first-child {
-    font-weight: bold;
+    font-weight: 600;
     color: #4c4b6c;
 }
 
@@ -153,36 +157,81 @@
     color: #ababab;
 }
 
+
+
+
 /* Nijnee menu */
 .nijnee_menu {
     display: inline-block;
     width: 100%;
     background: #f7f7f7;
+    padding: 9px;
     position: relative;
-    height: 50px;
 }
 
-.hover_menu a {
-    text-decoration: none;
-    padding: 10px 15px;
+.menu_home {
+    padding: 8px 23px;
+    margin-left: 4px;
     color: #4c4b6c;
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
 }
-.hover_menu a:hover {
+.hover_menu {
+    padding-top: 9px;
+    display: flex;
+    justify-content: end;
+}
+.hover_menu .menu_home:hover {
     color: white;
     background: #7cd0f5;
     border-radius: 20px;
+    transition: 0.3s;
 }
 .dropdown_menu a{
-    font-size: 14px;
-    color: #2b2b2b;  
+    text-decoration: none;
 }
-.dropdown_menu li {
-    padding: 6px;
+.dropdown_menu a:hover {
+    color: #7cd0f5;
 }
-.dropdown_menu li:first-child a{
-    font-weight: bold;
+.pages_menu {
+    color: #2b2b2b;
     font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.page a{
+    padding-top: 13px;
+    font-size: 13px;
+    color: #4c4b6c;
+}
+.page li {
+    padding-top: 10px;
+}
+
+.search {
+    background: #fff;
+    padding: 8px;
+    border-radius: 25px;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 22%;
+    padding-left: 17px;
+}
+.search input {
+    border: none;
+    background: transparent;
+    width: 195px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.search button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding-left: 40px;
 }
 
 
@@ -204,7 +253,7 @@
     font-size: 30px;
 }
 #product {
-    padding: 15px;
+    padding: 15px 0;
 }
 .body_block {
     margin-top: 20px;
@@ -222,10 +271,10 @@
 /* Product style */
     .product {
         display: inline-block;
-        min-height: 310px;
+        min-height: 315px;
     }
     .product img {
-        width: 203px;
+        width: 216px;
         height: 200px;
         overflow: hidden;
         object-fit: contain;
@@ -271,9 +320,9 @@
     .btns li {
         padding: 0;
     }
-    .btns .ul_li {
+   /* .btns .ul_li {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-evenly;*/
     }
     .btns .seryi_krug {
         transition: .5s;
@@ -305,7 +354,7 @@
         text-align: center;
     }
     .ttl {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: bold;
         margin-bottom: 5px;
     }
@@ -324,14 +373,14 @@
     }
     .tooltip {
         position: absolute;
-        right: -7px;
+        right: -1px;
         top: 7px;
         color: white;
         padding: 3px 6px;
         font-size: 13px;
         border-radius: 4px;
+        z-index: 1;
         opacity: 1;
-        z-index: ;
     }    
     #banner img{
         width: 100%;
@@ -424,52 +473,4 @@
         text-align: end;
     }
 
-
-
-
-
-
-
-
-/* Урок 19 */
-/*   МОБИЛЬНАЯ АДАПТАЦИЯ */
-
-    /* Заметка: 
-     Есть 2 вида адаптации:
-        1) Резиновый шаблон - это когда сайт задан в % соотношении.
-        2) Фиксированный - это когда адаптируем наш сайт на стандарты того или иного устройства.
-            */
-
-@media (max-width: 1024px) {
-    .container{
-        width: auto;
-    }
-
-    .list_product {
-        flex-wrap: wrap;
-        justify-content: left;
-    }
-    .product {
-        margin-right: 17px;
-    }
-    .list_product > .product:nth-child(4n) {
-        margin-right: 0;
-    }
-    .verhnee_menu, .center_menu p {
-        font-size: 12px;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .product {
-        margin-right: 8px;
-    }
-    .list_product > .product:nth-child(3n) {
-        margin-right: 30px;
-    }
-    .list_product > .product:nth-child(4n) {
-        margin-right: 0;
-    }
-}
     

@@ -152,3 +152,46 @@ alert('Привет гость!'); //Модальное окно - систем�
         } else {
                 alert("Ответ не правильный!");
         }
+
+
+
+
+//   DZ urok 26
+
+let first = +prompt("Введите первое число");
+let second = +prompt("Введите второе число");
+let operator = prompt("введите оператора");
+
+if (operator == '+') {
+	 console.log(first+  second);
+}
+
+if (operator == '-') {
+	 console.log(first + second);
+}
+
+if (operator == '*') {
+	 console.log(first * second);
+}
+
+if (operator == '/') {
+	 console.log(first / second);
+}
+
+
+
+
+//  DZ 2  (26)
+
+let login = prompt("Введите логин:");
+let password = prompt("Введите пароль:");
+
+if (login == "admin" && password == "user") {
+	console.log("Welcome!");
+}
+ else if (login !== "admin" && password == "user" ) {
+	console.log("Логин не правильный");
+} 
+else {
+	console.log("Пароль не правильный");
+}
