@@ -7,14 +7,43 @@
 
 
 
-function myFunction(){
-    // let x = +prompt("Введите логин: "),
-    //     y = +prompt("Введите пароль: "),
+function myFunc(user, pass, showMessage, out) {
+    let myUser = prompt("Введите логин: ");
         
+        if (user == myUser) {
+            let myPass = prompt("Введите пароль: ");
+            showMessage();
+        }   else{
+            out();
+        }
 
-   
-};
-myFunction();
+}
+
+function showTrueMessage() {
+    alert("Правильно! Добро пожаловать админ!");
+}
+function outFalse() {
+    alert("Что-то неправильно ввели :( ")
+}
+myFunc("login", "mypass", showTrueMessage, outFalse);
 
 
 
+
+
+
+
+
+
+
+    function myFunction() {
+        let login = prompt("Веедите логин");
+        userPass = prompt("Введите пароль");
+
+        if (login == "login" && userPass == "pass") {
+            loginOk = true;
+            alert("Правильно! Добро пожаловать админ!");
+        }else (login_ok==false){
+             alert("Неверный логин или пароль!");
+        }
+    }
