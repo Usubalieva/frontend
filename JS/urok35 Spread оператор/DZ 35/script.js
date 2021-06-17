@@ -31,7 +31,7 @@ const oldObj = {
 
     
 
- function myFunc() {
+function myFunc = {
     yourName = prompt("Введите имя: "),
     surname =  prompt("Введите фамилию: ");
 
