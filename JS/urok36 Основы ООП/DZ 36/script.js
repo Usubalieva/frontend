@@ -5,6 +5,11 @@ let salary = {
     almaz: 1200,
     adilet: 1300,
     nursultan: 3000,
+    getBonus(bonus) {
+        for (let key in bonus) {
+            console.log(`${key} ${this[key] += bonus[key]}`);
+        }
+    }
 };
 
 let bonus = {
@@ -13,7 +18,7 @@ let bonus = {
     nursultan: 200,
 };
 
-Object.setPrototypeOf(salary, bonus);
+salary.getBonus(bonus);
 
 
 

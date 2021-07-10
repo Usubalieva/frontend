@@ -1,39 +1,12 @@
+"use strict";
+//    DZ  35
 
-//    DZ
-// №1) 
-function copy_arr(myObj) {
-
-    const newObj = {};
-
-    let key;
-    for(key in myObj){
-        newObj[key] = myObj[key];
-    }
-
-    return newObj;
-
+function getPersonInfo(name, surname, option1, ...rest) {
+    console.log(`${name} ${surname} ${option1}, ${rest.join(', ')}`);
 }
 
+getPersonInfo('Bret', 'Pit', 'option1', 'option2', 'option3', 'option4');
 
-const oldObj = {
-    name: "Ismar",
-    surname: "Suleimanov",
-    hobby: {
-        1: "swimming",
-        2: "running",
-        3: "reading",
-        4: "dancing"
-    }
-};
 
- console.log(oldObj);
- const newObj = copy_arr(oldObj);
 
-    
-
-function myFunc = {
-    yourName = prompt("Введите имя: "),
-    surname =  prompt("Введите фамилию: ");
-
- }
     
